@@ -1,0 +1,9 @@
+simulation_num: 10
+simulated_name: simulated_log_
+train_name: train_preprocessed
+test_name: test_preprocessed
+timestamp_format: '%Y-%m-%d %H:%M:%S'
+rp_sim: 0.85
+epochs: 100
+batch_size: 12
+learning_rate: 0.001

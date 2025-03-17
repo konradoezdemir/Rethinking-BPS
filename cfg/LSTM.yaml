@@ -1,0 +1,28 @@
+simulation_num: 10
+simulated_name: simulated_log_
+train_name: train_preprocessed
+test_name: test_preprocessed
+val_train_ratio: 0.2
+one_timestamp: False
+timestamp_format: '%Y-%m-%dT%H:%M:%S.%f' #'%Y-%m-%d %H:%M:%S%z'
+column_names: {'case_id': 'caseid', 'activity_name': 'task', 'resource': 'user'}
+rp_sim: 0.85 # Similarity btw the resources profile execution (Song e.t. all)
+n_gram_size: 10
+norm_method: 'max'
+scaler: 'basic' # basic: does not include intercase features
+vectorizer: 'basic' # basic: does not include intercase features
+layer_size: 50  # for HPO, multiple options can be provided: e.g., [50, 100]
+lstm_act: 'tanh' # for HPO, multiple options can be provided: e.g., ['selu', 'tanh']
+dense_act: 'linear'
+train:
+  batch_size: 32
+  max_epochs: 100
+  optimizer: 'Adam' # NAdam, AdamW, Adam
+  base_lr: 0.01
+  eps: 1e-7 
+  weight_decay: 0.0  
+  early_stop.patience: 20
+  early_stop.min_delta: 0 # in percentage: 0.02 means 2% improvement in loss value
+evaluation:
+  batch_size: 1
+  prediction_method: random # random or argmax
