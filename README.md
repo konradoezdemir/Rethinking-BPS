@@ -27,5 +27,8 @@ sbatch bash_scripts/sample.sh
 ```
 
 # The Appendix to our Work
-![Proof Page 1](appendix/Rethinking_BPS__appendix-1.png)
-![Proof Page 2](appendix/Rethinking_BPS__appendix-2.png)
+![Appendix Page 1](appendix/BPM2025__Rethinking_Business_Process_Simulation_appendix_page-0001.jpg)
+![Appendix Page 2](appendix/BPM2025__Rethinking_Business_Process_Simulation_appendix_page-0002.jpg)
+![Appendix Page 3](appendix/BPM2025__Rethinking_Business_Process_Simulation_appendix_page-0003.jpg)
+![Appendix Page 4](appendix/BPM2025__Rethinking_Business_Process_Simulation_appendix_page-0004.jpg)
+![Appendix Page 5](appendix/BPM2025__Rethinking_Business_Process_Simulation_appendix_page-0005.jpg)
